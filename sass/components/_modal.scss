@@ -1,17 +1,24 @@
 .modal {
+    width: 90vw;
     position: absolute;
-    min-height: 581px;
-    min-width: 528px;
+    top: 50%;
+    left: 50%;
     background-color: var(--main-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0);
     transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
     .backdrop.is-hidden & {
         transform: scale(0.5) rotate(40deg);
+    }
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 609px;
+    }
+    @media screen and (min-width: 1200px) {
+    height: 581px;
+    width: 528px;
     }
 }
 
