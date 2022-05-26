@@ -96,20 +96,24 @@ body {
 }
 
 .btn {
-  min-width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   background-color: var(--accent-color);
   cursor: pointer;
-  line-height: 1.87;
   font-family: inherit;
-  font-size: 16px;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--btn-color);
   font-weight: 700;
+}
+@media screen and (min-width: 480px) {
+  .btn {
+    min-width: 200px;
+    line-height: 1.87;
+    font-size: 16px;
+  }
 }
 
 .logo {
@@ -145,6 +149,12 @@ body {
   justify-content: center;
   margin-bottom: 56px;
 }
+@media screen and (min-width: 480px) {
+  .portfolio-btn {
+    justify-content: start;
+  }
+}
+
 .portfolio-btn-item {
   margin-right: 8px;
 }
@@ -500,17 +510,17 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
+  overflow-y: auto;
   background-color: white;
   padding-top: 48px;
   padding-bottom: 48px;
-  padding-left: 40px;
 }
 .mob-menu .container {
+  padding-left: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  overflow-y: auto;
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -524,7 +534,7 @@ body {
 .mob-header-list__link {
   font-weight: 500;
   font-size: 40px;
-  line-height: calc 1.175;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--header-color);
 }
@@ -549,17 +559,27 @@ body {
 
 .mob-social-list {
   display: flex;
+  min-width: 320px;
+}
+
+.mob-social-item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mob-social-item:not(:first-child) {
+  margin-left: 10px;
 }
 
 .mob-social-text {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  padding: 10px;
   color: var(--accent-color);
+  font-weight: 500;
 }
-.mob-social-text:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+@media screen and (min-width: 480px) {
+  .mob-social-text {
+    font-size: 18px;
+    line-height: 1.2222222222;
+  }
 }
 
 .no-scroll {
