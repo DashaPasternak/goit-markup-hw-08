@@ -104,7 +104,6 @@ body {
   cursor: pointer;
   font-family: inherit;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--btn-color);
   font-weight: 700;
 }
@@ -113,6 +112,7 @@ body {
     min-width: 200px;
     line-height: 1.87;
     font-size: 16px;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -146,17 +146,23 @@ body {
 
 .portfolio-btn {
   display: flex;
-  justify-content: center;
-  margin-bottom: 56px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .portfolio-btn {
-    justify-content: start;
+    justify-content: center;
+    margin-bottom: 56px;
   }
 }
 
 .portfolio-btn-item {
   margin-right: 8px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-btn-item {
+    margin-bottom: 15px;
+  }
 }
 
 .btn-filter {
@@ -559,7 +565,7 @@ body {
 
 .mob-social-list {
   display: flex;
-  min-width: 320px;
+  flex-wrap: wrap;
 }
 
 .mob-social-item:not(:last-child) {

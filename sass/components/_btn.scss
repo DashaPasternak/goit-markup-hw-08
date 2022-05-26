@@ -7,12 +7,12 @@
     cursor: pointer;
     font-family: inherit;
     text-align: center;
-    letter-spacing: 0.06em;
     color: var(--btn-color);
     font-weight: 700;
     @media screen and (min-width: 480px) {
         min-width: 200px;
         line-height: 1.87;
         font-size: 16px;
+        letter-spacing: 0.06em;
     }
 }

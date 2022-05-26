@@ -198,7 +198,7 @@
 
 .mob-social-list {
   display: flex;
-  min-width: 320px;
+  flex-wrap: wrap;
 }
 
 .mob-social-item {
