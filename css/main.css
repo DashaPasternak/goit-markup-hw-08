@@ -136,6 +136,10 @@ body {
   }
 }
 
+.logo-footer {
+  margin-right: 0;
+}
+
 .logo__text--header {
   color: var(--header-color);
 }
@@ -449,6 +453,9 @@ body {
 @media screen and (min-width: 1200px) {
   .contacts-list__item {
     margin-right: 30px;
+  }
+  .contacts-list__item:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 768px) {
